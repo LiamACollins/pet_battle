@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: 2.7.5
 
-Things you may want to cover:
+Docs for the Wunder API used can be found here: https://github.com/wunderteam/battle-pets-api
+Endpoint of the Wunder API: https://wunder-pet-api-staging.herokuapp.com
 
-* Ruby version
+The battle pets app handles post and get requests from the demo_script.rb file and all endpoints are in JSON. The demo script can be accessed [here](https://github.com/wunderteam/battle-pets-arena/archive/master.zip).
 
-* System dependencies
+# Setting up the App:
 
-* Configuration
+  ## Install dependencies
+  ````bundle install````
 
-* Database creation
+  ## Setup database
+  ````bundle exec rake db:create````<br/>
+  ````bundle exec rake db:migrate````
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ## Start server
+  ````bundle exec rails s -p 3000````
